@@ -74,7 +74,7 @@ export async function GET(request: Request) {
 
     return NextResponse.json({
       message: "Product details updated successfully",
-      data: updatedProducts.length,
+      productCount: updatedProducts.length,
     });
   } catch (error: any) {
     throw new Error(`Failed to get all products: ${error.message}`);
